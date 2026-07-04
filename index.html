@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Dashboard</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+
+            <h1 id="time">00:00:00</h1>
+
+            <p id="date">
+                Monday, January 1, 2026
+            </p>
+
+            <h2 id="greeting">
+                Good Morning
+            </h2>
+
+        </header>
+
+        <main>
+
+            <section class="card">
+
+                <h3>Focus Timer</h3>
+
+                <h1 id="timer">
+                    25:00
+                </h1>
+
+                <div class="buttons">
+
+                    <button id="startBtn">
+                        Start
+                    </button>
+
+                    <button id="stopBtn">
+                        Stop
+                    </button>
+
+                    <button id="resetBtn">
+                        Reset
+                    </button>
+
+                </div>
+
+            </section>
+
+            <section class="card">
+
+                <h3>Tasks</h3>
+
+                <div class="todo-input">
+
+                    <input
+                        type="text"
+                        id="taskInput"
+                        placeholder="Add task">
+
+                    <button id="addTask">
+                        Add
+                    </button>
+
+                </div>
+
+                <ul id="taskList"></ul>
+
+            </section>
+
+            <section class="card">
+
+                <h3>Quick Links</h3>
+
+                <div class="link-input">
+
+                    <input
+                        type="text"
+                        id="linkName"
+                        placeholder="Name">
+
+                    <input
+                        type="url"
+                        id="linkUrl"
+                        placeholder="URL">
+
+                    <button id="addLink">
+                        Add Link
+                    </button>
+
+                </div>
+
+                <div id="links"></div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
